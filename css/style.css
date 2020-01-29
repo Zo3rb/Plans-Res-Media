@@ -1,0 +1,603 @@
+/** Some reset Rules by Tutorials **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Serif', serif;
+    height: auto
+}
+
+
+/** End Of The Reset Rules by Tutorials **/
+
+
+/** Starting The Header Here Styles Here **/
+
+.header {
+    background: url("../images/wb1.jpg") no-repeat top center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.header .overlay {
+    background-color: rgba(85, 206, 221, 0.3);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.header .overlay h1 {
+    font-size: 45px;
+    margin: 220px 0 20px;
+}
+
+.header .overlay .container .plan {
+    width: 48%;
+    border: 3px solid white;
+    margin: 0 1% 20px;
+    padding: 20px;
+}
+
+.header .overlay .container .order {
+    width: 98%;
+    margin: 0 1%;
+    border: 3px solid white;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .header .overlay .container .plan {
+        float: none;
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto 10px;
+    }
+    .header .overlay h1 {
+        margin-bottom: 30px;
+        margin-top: 150px;
+    }
+}
+
+
+/** Ending The Header Here Styles Here **/
+
+
+/** Starting The Features Here **/
+
+.features {
+    background: url("../images/wb3.jpg") top center no-repeat;
+    background-size: cover;
+    height: 700px;
+    color: #d8ab3f;
+    padding: 20px;
+}
+
+.features h2 {
+    margin: 100px 0 50px;
+}
+
+.features h2,
+.features h3 {
+    color: white;
+}
+
+.features .feat {
+    width: 31%;
+    margin: 10px .55555%;
+    border: 1px solid #d8ab3f;
+    padding: 1%;
+    line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+    .features {
+        height: auto;
+    }
+    .features .feat {
+        width: 100%;
+        margin: 10px 0;
+        float: none;
+    }
+}
+
+
+/** Ending The Features Here **/
+
+
+/** Starting The About Us Section Here **/
+
+.about-us {
+    background: url("../images/wb2.jpg") top center no-repeat;
+    background-size: cover;
+    height: auto;
+    color: #d8ab3f;
+    ;
+}
+
+.about-us .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 21, 21, 0.5);
+    padding: 30px;
+}
+
+.about-us .overlay h2 {
+    margin: 20px 0 40px;
+    color: white;
+}
+
+.about-us .overlay p {
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .about-us {
+        height: auto;
+    }
+}
+
+
+/** Ending The About Us Section Here **/
+
+
+/** Starting The Gallery Section Here **/
+
+.gallery {
+    background-color: gray;
+    overflow: hidden;
+}
+
+.image {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+@media (max-width: 767px) {
+    .image {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .image {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .image {
+        width: 33.33333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image {
+        width: 25%;
+    }
+}
+
+
+/** Ending The Gallery Section Here **/
+
+
+/** Starting The Pricing Plans Section Here **/
+
+.pricing-plans {
+    background-color: gray;
+    padding: 20px;
+}
+
+.pricing-plans h2 {
+    margin: 50px 0 40px;
+    color: white;
+}
+
+.pricing-plans .container div {
+    width: 32.66666%;
+    color: white;
+    background-color: gray;
+    padding: 30px;
+    line-height: 1.7;
+    border: 3px solid white;
+}
+
+.pricing-plans .container div:not(.premium) {
+    margin-right: 1%;
+    margin-bottom: 50px;
+}
+
+.pricing-plans h3 {
+    color: rebeccapurple;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .pricing-plans {
+        height: auto;
+    }
+    .pricing-plans .container div {
+        width: 100%;
+        font-size: 16px !important;
+        margin: 0 0 20px 0 !important;
+    }
+}
+
+
+/** Ending The Pricing Plans Section Here **/
+
+
+/** Starting The they Said About Us Section Here **/
+
+.they-said {
+    padding: 30px 0;
+    background-color: #2c3e50;
+}
+
+.they-said h2 {
+    margin: 50px 0 40px;
+    color: #ecf0f1;
+}
+
+.they-said .person {
+    padding: 30px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.they-said .person .avatar {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.they-said .person p {
+    width: calc(100% - 120px);
+}
+
+@media (min-width: 768px) {
+    .they-said .person:first-of-type {
+        width: 100%;
+    }
+    .they-said .person:not(:first-of-type) {
+        width: 49%;
+    }
+}
+
+.they-said .person:nth-of-type(3) {
+    margin-left: 2%;
+}
+
+.they-said .person h3 {
+    margin: 0 0 10px;
+}
+
+@media (min-width: 992px) {
+    .they-said .person:first-of-type {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .they-said .person:not(:first-of-type) {
+        width: 48%;
+        margin: 0 1%;
+    }
+}
+
+@media (max-width: 767px) {
+    .they-said .person {
+        width: 100% !important;
+        line-height: 1.2 !important;
+        margin: 0 0 20px !important;
+        border: 1px solid white !important;
+        padding: 20px !important;
+    }
+    .they-said .person .avatar {
+        float: none;
+        margin: auto;
+    }
+    .they-said .person h3 {
+        float: none;
+        padding: 0 !important;
+        margin: 10px 0 20px;
+    }
+    .they-said .person p {
+        float: none !important;
+        padding: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+}
+
+
+/** Ending The they Said About Us Section Here **/
+
+
+/** Starting The Product Information here **/
+
+.information {
+    padding: 50px;
+    background-color: #808080;
+    color: white;
+}
+
+.information h3 {
+    margin-top: 20px;
+}
+
+
+/** Ending The Product Information here **/
+
+
+/** Starting The Contact-us Section here **/
+
+.contact-form {
+    overflow: hidden;
+    background-color: #2C3E50;
+    color: white;
+    padding: 30px;
+}
+
+.contact-form .container>div {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.contact-form .info {
+    line-height: 2.5;
+}
+
+.contact-form .info span {
+    color: #0a88ff;
+}
+
+.contact-form .info button {
+    background-color: #0a88ff;
+    color: white;
+    width: 80%;
+    margin: 20px 0;
+    padding: 7px 0;
+}
+
+.contact-form .msg input[type="text"],
+.contact-form .msg input[type="email"],
+.contact-form .msg textarea {
+    width: 100%;
+    line-height: 2;
+    margin-bottom: 7px;
+    background: #0a88ff;
+    border: none;
+    padding-left: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 10px #FFF;
+    resize: none;
+}
+
+.contact-form .msg textarea {
+    height: 200px;
+}
+
+.contact-form .msg input[type="submit"] {
+    width: 30%;
+    margin: auto;
+    background-color: #0a88ff;
+    color: white;
+    padding: 7px 0;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .contact-form .info button {
+        margin: auto;
+        display: block;
+    }
+    .contact-form .container>div {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contact-form .container .info::after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        display: inline-block;
+    }
+}
+
+
+/** Ending The Contact-us Section here **/
+
+
+/** Starting The Footer Section Here **/
+
+.footer {
+    background-color: #808080;
+    color: white;
+    padding: 30px;
+}
+
+.footer .container>div {
+    width: 49%;
+    margin: .5%;
+}
+
+@media (max-width: 767px) {
+    .footer .container>div {
+        width: 100%;
+        line-height: 1.7;
+    }
+}
+
+
+/** ending The Footer Section Here **/
+
+
+/** The Responsive Dimensions rules **/
+
+@media (max-width: 767px) {
+    /** The Extra Small Width**/
+    .visible-xs {
+        display: block !important;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .res-paragraph {
+        text-align: center;
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 787px) and (max-width: 991px) {
+    /** The Small Width**/
+    .visible-s {
+        display: block !important;
+    }
+    .hidden-s {
+        display: none !important;
+    }
+    .res-paragraph {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /** The medium Width**/
+    .visible-md {
+        display: block !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+    .res-paragraph {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    /** The large Width**/
+    .visible-lg {
+        display: block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+
+/** The Responsive Dimensions rules **/
+
+
+/** Custom Framework **/
+
+.container {
+    width: 95%;
+    padding: 0 2.5%;
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.visible-xs,
+.visible-s,
+.visible-md,
+.visible-lg,
+{
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.h1 {
+    font-size: 2em;
+}
+
+.padding-left {
+    padding: 5 5 5 0;
+}
+
+.padding-right {
+    padding: 5 0 5 5;
+}
+
+.classic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.res-paragraph {
+    line-height: 1.8;
+}
+
+.res-image {
+    width: 100%;
+    height: 100%;
+}
+
+.circle-image {
+    border-radius: 50%;
+    padding: 3px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.big {
+    text-transform: uppercase;
+}
+
+
+/** Custom Framework **/
+
+
+/** The Ads Area That Can Change Any time **/
+
+.ad1,
+.ad2 {
+    position: fixed;
+    z-index: 1000;
+}
+
+.ad1 img,
+.ad2 img {
+    width: 350px;
+    height: 200px;
+}
+
+.ad1 {
+    top: 0;
+    left: 0;
+}
+
+.ad2 {
+    top: 0;
+    right: 0;
+}
+
+
+/** The Ads Area That Can Change Any time **/
