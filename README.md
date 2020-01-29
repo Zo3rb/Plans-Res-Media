@@ -1,4 +1,4 @@
-# MoGo Template HTML/CSS (Not Responsive)
+# Plans Template HTML/CSS (Responsive)
 
 Just Another Template Using HTML / CSS While Learning (Responsive With Media Query)
 
