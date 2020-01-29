@@ -7,7 +7,7 @@ Just Another Template Using HTML / CSS While Learning (Responsive With Media Que
 Just Download it and Preview or Check The URL
 
 ```
-
+https://zo3rb.github.io/Plans-Res-Media/
 ```
 ### auther
 ```
